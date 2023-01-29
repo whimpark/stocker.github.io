@@ -1,0 +1,767 @@
+[
+  {
+    "code": "600009",
+    "name": "上海机场",
+    "info": {
+      "date": "2023-01-16",
+      "open": "61.00",
+      "close": "63.00",
+      "max": "63.80",
+      "min": "60.95",
+      "deal_num": "655314",
+      "deal_amount": "4134658862.00",
+      "amp_total": "4.91",
+      "amp_final_percent": "8.62",
+      "amp_final_amount": "5.00",
+      "exchange": "5.99"
+    }
+  },
+  {
+    "code": "600156",
+    "name": "华升股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "4.67",
+      "close": "4.94",
+      "max": "5.14",
+      "min": "4.64",
+      "deal_num": "162885",
+      "deal_amount": "79394891.00",
+      "amp_total": "10.71",
+      "amp_final_percent": "5.78",
+      "amp_final_amount": "0.27",
+      "exchange": "4.05"
+    }
+  },
+  {
+    "code": "600191",
+    "name": "华资实业",
+    "info": {
+      "date": "2023-01-16",
+      "open": "5.18",
+      "close": "5.70",
+      "max": "5.70",
+      "min": "5.15",
+      "deal_num": "73506",
+      "deal_amount": "40616593.00",
+      "amp_total": "10.62",
+      "amp_final_percent": "10.04",
+      "amp_final_amount": "0.52",
+      "exchange": "1.52"
+    }
+  },
+  {
+    "code": "600203",
+    "name": "福日电子",
+    "info": {
+      "date": "2023-01-16",
+      "open": "6.24",
+      "close": "6.21",
+      "max": "6.66",
+      "min": "6.19",
+      "deal_num": "556030",
+      "deal_amount": "353963080.00",
+      "amp_total": "7.77",
+      "amp_final_percent": "2.64",
+      "amp_final_amount": "0.16",
+      "exchange": "9.83"
+    }
+  },
+  {
+    "code": "600483",
+    "name": "福能股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "11.54",
+      "close": "12.03",
+      "max": "12.03",
+      "min": "11.54",
+      "deal_num": "494142",
+      "deal_amount": "587146799.00",
+      "amp_total": "4.48",
+      "amp_final_percent": "9.96",
+      "amp_final_amount": "1.09",
+      "exchange": "2.83"
+    }
+  },
+  {
+    "code": "600517",
+    "name": "国网英大",
+    "info": {
+      "date": "2023-01-16",
+      "open": "4.95",
+      "close": "5.05",
+      "max": "5.10",
+      "min": "4.94",
+      "deal_num": "191013",
+      "deal_amount": "96389887.00",
+      "amp_total": "3.24",
+      "amp_final_percent": "2.23",
+      "amp_final_amount": "0.11",
+      "exchange": "1.01"
+    }
+  },
+  {
+    "code": "600572",
+    "name": "康恩贝",
+    "info": {
+      "date": "2023-01-16",
+      "open": "4.60",
+      "close": "4.98",
+      "max": "5.02",
+      "min": "4.60",
+      "deal_num": "1803629",
+      "deal_amount": "891082990.00",
+      "amp_total": "9.21",
+      "amp_final_percent": "9.21",
+      "amp_final_amount": "0.42",
+      "exchange": "7.04"
+    }
+  },
+  {
+    "code": "600577",
+    "name": "精达股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "4.40",
+      "close": "4.56",
+      "max": "4.65",
+      "min": "4.37",
+      "deal_num": "396500",
+      "deal_amount": "179723371.00",
+      "amp_total": "6.38",
+      "amp_final_percent": "3.87",
+      "amp_final_amount": "0.17",
+      "exchange": "1.99"
+    }
+  },
+  {
+    "code": "600616",
+    "name": "金枫酒业",
+    "info": {
+      "date": "2023-01-16",
+      "open": "6.61",
+      "close": "6.97",
+      "max": "7.24",
+      "min": "6.61",
+      "deal_num": "385932",
+      "deal_amount": "270563114.00",
+      "amp_total": "9.55",
+      "amp_final_percent": "5.61",
+      "amp_final_amount": "0.37",
+      "exchange": "5.77"
+    }
+  },
+  {
+    "code": "600621",
+    "name": "华鑫股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "10.75",
+      "close": "11.24",
+      "max": "11.79",
+      "min": "10.69",
+      "deal_num": "411874",
+      "deal_amount": "468672707.00",
+      "amp_total": "10.22",
+      "amp_final_percent": "4.46",
+      "amp_final_amount": "0.48",
+      "exchange": "3.88"
+    }
+  },
+  {
+    "code": "600638",
+    "name": "新黄浦",
+    "info": {
+      "date": "2023-01-16",
+      "open": "5.43",
+      "close": "5.83",
+      "max": "6.00",
+      "min": "5.37",
+      "deal_num": "153660",
+      "deal_amount": "88102255.00",
+      "amp_total": "11.56",
+      "amp_final_percent": "6.97",
+      "amp_final_amount": "0.38",
+      "exchange": "2.28"
+    }
+  },
+  {
+    "code": "600645",
+    "name": "中源协和",
+    "info": {
+      "date": "2023-01-16",
+      "open": "17.54",
+      "close": "18.33",
+      "max": "18.50",
+      "min": "17.49",
+      "deal_num": "95565",
+      "deal_amount": "173085280.00",
+      "amp_total": "5.75",
+      "amp_final_percent": "4.27",
+      "amp_final_amount": "0.75",
+      "exchange": "2.04"
+    }
+  },
+  {
+    "code": "600685",
+    "name": "中船防务",
+    "info": {
+      "date": "2023-01-16",
+      "open": "21.17",
+      "close": "21.81",
+      "max": "21.85",
+      "min": "21.14",
+      "deal_num": "252642",
+      "deal_amount": "544864606.00",
+      "amp_total": "3.48",
+      "amp_final_percent": "6.81",
+      "amp_final_amount": "1.39",
+      "exchange": "3.08"
+    }
+  },
+  {
+    "code": "600746",
+    "name": "江苏索普",
+    "info": {
+      "date": "2023-01-16",
+      "open": "8.29",
+      "close": "8.41",
+      "max": "8.46",
+      "min": "8.29",
+      "deal_num": "49327",
+      "deal_amount": "41423598.00",
+      "amp_total": "2.05",
+      "amp_final_percent": "1.57",
+      "amp_final_amount": "0.13",
+      "exchange": "1.16"
+    }
+  },
+  {
+    "code": "600814",
+    "name": "杭州解百",
+    "info": {
+      "date": "2023-01-16",
+      "open": "7.05",
+      "close": "7.69",
+      "max": "7.69",
+      "min": "7.00",
+      "deal_num": "230021",
+      "deal_amount": "174331539.00",
+      "amp_total": "9.87",
+      "amp_final_percent": "10.01",
+      "amp_final_amount": "0.70",
+      "exchange": "3.22"
+    }
+  },
+  {
+    "code": "600897",
+    "name": "厦门空港",
+    "info": {
+      "date": "2023-01-16",
+      "open": "16.27",
+      "close": "16.65",
+      "max": "17.29",
+      "min": "16.27",
+      "deal_num": "46998",
+      "deal_amount": "79265504.00",
+      "amp_total": "6.26",
+      "amp_final_percent": "2.15",
+      "amp_final_amount": "0.35",
+      "exchange": "1.58"
+    }
+  },
+  {
+    "code": "600908",
+    "name": "无锡银行",
+    "info": {
+      "date": "2023-01-16",
+      "open": "5.65",
+      "close": "5.69",
+      "max": "5.88",
+      "min": "5.61",
+      "deal_num": "619012",
+      "deal_amount": "354468858.00",
+      "amp_total": "4.94",
+      "amp_final_percent": "4.02",
+      "amp_final_amount": "0.22",
+      "exchange": "3.49"
+    }
+  },
+  {
+    "code": "600918",
+    "name": "中泰证券",
+    "info": {
+      "date": "2023-01-16",
+      "open": "6.60",
+      "close": "6.84",
+      "max": "7.00",
+      "min": "6.58",
+      "deal_num": "623179",
+      "deal_amount": "424296772.00",
+      "amp_total": "6.39",
+      "amp_final_percent": "4.11",
+      "amp_final_amount": "0.27",
+      "exchange": "2.39"
+    }
+  },
+  {
+    "code": "601099",
+    "name": "太平洋",
+    "info": {
+      "date": "2023-01-16",
+      "open": "2.65",
+      "close": "2.77",
+      "max": "2.88",
+      "min": "2.64",
+      "deal_num": "2514695",
+      "deal_amount": "697619302.00",
+      "amp_total": "9.09",
+      "amp_final_percent": "4.92",
+      "amp_final_amount": "0.13",
+      "exchange": "3.69"
+    }
+  },
+  {
+    "code": "601177",
+    "name": "杭齿前进",
+    "info": {
+      "date": "2023-01-16",
+      "open": "8.20",
+      "close": "8.38",
+      "max": "8.46",
+      "min": "8.18",
+      "deal_num": "57534",
+      "deal_amount": "48032875.00",
+      "amp_total": "3.48",
+      "amp_final_percent": "4.10",
+      "amp_final_amount": "0.33",
+      "exchange": "1.44"
+    }
+  },
+  {
+    "code": "601528",
+    "name": "瑞丰银行",
+    "info": {
+      "date": "2023-01-16",
+      "open": "6.53",
+      "close": "6.82",
+      "max": "7.15",
+      "min": "6.49",
+      "deal_num": "369834",
+      "deal_amount": "253719145.00",
+      "amp_total": "10.14",
+      "amp_final_percent": "4.76",
+      "amp_final_amount": "0.31",
+      "exchange": "6.09"
+    }
+  },
+  {
+    "code": "601555",
+    "name": "东吴证券",
+    "info": {
+      "date": "2023-01-16",
+      "open": "6.86",
+      "close": "7.09",
+      "max": "7.32",
+      "min": "6.84",
+      "deal_num": "959804",
+      "deal_amount": "681939349.00",
+      "amp_total": "6.99",
+      "amp_final_percent": "3.20",
+      "amp_final_amount": "0.22",
+      "exchange": "1.92"
+    }
+  },
+  {
+    "code": "601566",
+    "name": "九牧王",
+    "info": {
+      "date": "2023-01-16",
+      "open": "7.52",
+      "close": "8.25",
+      "max": "8.25",
+      "min": "7.52",
+      "deal_num": "60038",
+      "deal_amount": "47555321.00",
+      "amp_total": "9.73",
+      "amp_final_percent": "10.00",
+      "amp_final_amount": "0.75",
+      "exchange": "1.04"
+    }
+  },
+  {
+    "code": "601698",
+    "name": "中国卫通",
+    "info": {
+      "date": "2023-01-16",
+      "open": "11.65",
+      "close": "12.17",
+      "max": "12.25",
+      "min": "11.63",
+      "deal_num": "138171",
+      "deal_amount": "166046728.00",
+      "amp_total": "5.33",
+      "amp_final_percent": "4.64",
+      "amp_final_amount": "0.54",
+      "exchange": "0.35"
+    }
+  },
+  {
+    "code": "601800",
+    "name": "中国交建",
+    "info": {
+      "date": "2023-01-16",
+      "open": "8.02",
+      "close": "8.28",
+      "max": "8.42",
+      "min": "7.95",
+      "deal_num": "1207980",
+      "deal_amount": "996025388.00",
+      "amp_total": "5.87",
+      "amp_final_percent": "3.37",
+      "amp_final_amount": "0.27",
+      "exchange": "1.03"
+    }
+  },
+  {
+    "code": "603097",
+    "name": "江苏华辰",
+    "info": {
+      "date": "2023-01-16",
+      "open": "20.18",
+      "close": "20.07",
+      "max": "20.70",
+      "min": "19.58",
+      "deal_num": "126277",
+      "deal_amount": "254069226.00",
+      "amp_total": "5.69",
+      "amp_final_percent": "1.88",
+      "amp_final_amount": "0.37",
+      "exchange": "31.57"
+    }
+  },
+  {
+    "code": "603110",
+    "name": "东方材料",
+    "info": {
+      "date": "2023-01-16",
+      "open": "34.70",
+      "close": "36.73",
+      "max": "37.51",
+      "min": "34.70",
+      "deal_num": "42078",
+      "deal_amount": "154114587.00",
+      "amp_total": "8.11",
+      "amp_final_percent": "5.97",
+      "amp_final_amount": "2.07",
+      "exchange": "2.09"
+    }
+  },
+  {
+    "code": "603187",
+    "name": "海容冷链",
+    "info": {
+      "date": "2023-01-16",
+      "open": "29.77",
+      "close": "31.60",
+      "max": "31.90",
+      "min": "29.66",
+      "deal_num": "52263",
+      "deal_amount": "162932817.00",
+      "amp_total": "7.52",
+      "amp_final_percent": "6.08",
+      "amp_final_amount": "1.81",
+      "exchange": "2.16"
+    }
+  },
+  {
+    "code": "603268",
+    "name": "松发股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "13.58",
+      "close": "14.05",
+      "max": "14.35",
+      "min": "13.41",
+      "deal_num": "22418",
+      "deal_amount": "31113811.00",
+      "amp_total": "6.96",
+      "amp_final_percent": "4.07",
+      "amp_final_amount": "0.55",
+      "exchange": "1.81"
+    }
+  },
+  {
+    "code": "603501",
+    "name": "韦尔股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "81.33",
+      "close": "91.25",
+      "max": "92.81",
+      "min": "81.01",
+      "deal_num": "480754",
+      "deal_amount": "4269724613.00",
+      "amp_total": "13.99",
+      "amp_final_percent": "8.15",
+      "amp_final_amount": "6.88",
+      "exchange": "4.08"
+    }
+  },
+  {
+    "code": "603516",
+    "name": "淳中科技",
+    "info": {
+      "date": "2023-01-13",
+      "open": "14.65",
+      "close": "15.60",
+      "max": "16.05",
+      "min": "14.46",
+      "deal_num": "160908",
+      "deal_amount": "249190970.00",
+      "amp_total": "10.90",
+      "amp_final_percent": "6.92",
+      "amp_final_amount": "1.01",
+      "exchange": "8.69"
+    }
+  },
+  {
+    "code": "603808",
+    "name": "歌力思",
+    "info": {
+      "date": "2023-01-16",
+      "open": "9.67",
+      "close": "10.55",
+      "max": "10.55",
+      "min": "9.56",
+      "deal_num": "145528",
+      "deal_amount": "148727853.00",
+      "amp_total": "10.32",
+      "amp_final_percent": "10.01",
+      "amp_final_amount": "0.96",
+      "exchange": "3.94"
+    }
+  },
+  {
+    "code": "605086",
+    "name": "龙高股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "19.29",
+      "close": "21.41",
+      "max": "21.41",
+      "min": "19.29",
+      "deal_num": "31628",
+      "deal_amount": "66184196.00",
+      "amp_total": "10.89",
+      "amp_final_percent": "10.02",
+      "amp_final_amount": "1.95",
+      "exchange": "6.18"
+    }
+  },
+  {
+    "code": "605287",
+    "name": "德才股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "23.47",
+      "close": "23.24",
+      "max": "23.62",
+      "min": "23.10",
+      "deal_num": "10214",
+      "deal_amount": "23878955.00",
+      "amp_total": "2.26",
+      "amp_final_percent": "0.82",
+      "amp_final_amount": "0.19",
+      "exchange": "1.63"
+    }
+  },
+  {
+    "code": "605366",
+    "name": "宏柏新材",
+    "info": {
+      "date": "2023-01-16",
+      "open": "15.42",
+      "close": "16.18",
+      "max": "16.59",
+      "min": "15.42",
+      "deal_num": "88303",
+      "deal_amount": "142355444.00",
+      "amp_total": "7.59",
+      "amp_final_percent": "5.00",
+      "amp_final_amount": "0.77",
+      "exchange": "4.20"
+    }
+  },
+  {
+    "code": "688046",
+    "name": "药康生物",
+    "info": {
+      "date": "2023-01-16",
+      "open": "26.98",
+      "close": "29.65",
+      "max": "30.96",
+      "min": "26.40",
+      "deal_num": "54421",
+      "deal_amount": "160382105.00",
+      "amp_total": "17.05",
+      "amp_final_percent": "10.88",
+      "amp_final_amount": "2.91",
+      "exchange": "11.74"
+    }
+  },
+  {
+    "code": "688079",
+    "name": "美迪凯",
+    "info": {
+      "date": "2023-01-16",
+      "open": "8.95",
+      "close": "9.63",
+      "max": "9.74",
+      "min": "8.95",
+      "deal_num": "41083",
+      "deal_amount": "38860476.00",
+      "amp_total": "8.84",
+      "amp_final_percent": "7.72",
+      "amp_final_amount": "0.69",
+      "exchange": "2.36"
+    }
+  },
+  {
+    "code": "688088",
+    "name": "虹软科技",
+    "info": {
+      "date": "2023-01-16",
+      "open": "23.39",
+      "close": "24.58",
+      "max": "25.10",
+      "min": "23.38",
+      "deal_num": "44737",
+      "deal_amount": "108686614.00",
+      "amp_total": "7.34",
+      "amp_final_percent": "4.86",
+      "amp_final_amount": "1.14",
+      "exchange": "1.67"
+    }
+  },
+  {
+    "code": "688160",
+    "name": "步科股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "31.22",
+      "close": "33.98",
+      "max": "34.28",
+      "min": "31.22",
+      "deal_num": "16661",
+      "deal_amount": "55413584.00",
+      "amp_total": "9.81",
+      "amp_final_percent": "8.91",
+      "amp_final_amount": "2.78",
+      "exchange": "6.01"
+    }
+  },
+  {
+    "code": "688179",
+    "name": "阿拉丁",
+    "info": {
+      "date": "2023-01-16",
+      "open": "37.88",
+      "close": "41.37",
+      "max": "42.50",
+      "min": "37.88",
+      "deal_num": "53543",
+      "deal_amount": "217186862.00",
+      "amp_total": "12.18",
+      "amp_final_percent": "9.10",
+      "amp_final_amount": "3.45",
+      "exchange": "7.28"
+    }
+  },
+  {
+    "code": "688182",
+    "name": "灿勤科技",
+    "info": {
+      "date": "2023-01-16",
+      "open": "11.78",
+      "close": "12.42",
+      "max": "12.53",
+      "min": "11.73",
+      "deal_num": "39422",
+      "deal_amount": "48513280.00",
+      "amp_total": "6.79",
+      "amp_final_percent": "5.43",
+      "amp_final_amount": "0.64",
+      "exchange": "4.11"
+    }
+  },
+  {
+    "code": "688265",
+    "name": "南模生物",
+    "info": {
+      "date": "2023-01-16",
+      "open": "49.58",
+      "close": "52.33",
+      "max": "54.04",
+      "min": "49.38",
+      "deal_num": "7699",
+      "deal_amount": "40724278.00",
+      "amp_total": "9.34",
+      "amp_final_percent": "4.91",
+      "amp_final_amount": "2.45",
+      "exchange": "1.58"
+    }
+  },
+  {
+    "code": "688278",
+    "name": "特宝生物",
+    "info": {
+      "date": "2023-01-16",
+      "open": "39.12",
+      "close": "41.13",
+      "max": "41.68",
+      "min": "39.12",
+      "deal_num": "30174",
+      "deal_amount": "122556754.00",
+      "amp_total": "6.56",
+      "amp_final_percent": "5.35",
+      "amp_final_amount": "2.09",
+      "exchange": "1.36"
+    }
+  },
+  {
+    "code": "688332",
+    "name": "中科蓝讯",
+    "info": {
+      "date": "2023-01-16",
+      "open": "50.10",
+      "close": "52.27",
+      "max": "53.18",
+      "min": "49.30",
+      "deal_num": "17115",
+      "deal_amount": "88708808.00",
+      "amp_total": "7.75",
+      "amp_final_percent": "4.44",
+      "amp_final_amount": "2.22",
+      "exchange": "5.88"
+    }
+  },
+  {
+    "code": "688508",
+    "name": "芯朋微",
+    "info": {
+      "date": "2023-01-16",
+      "open": "76.00",
+      "close": "80.46",
+      "max": "84.77",
+      "min": "75.50",
+      "deal_num": "51680",
+      "deal_amount": "414459636.00",
+      "amp_total": "12.78",
+      "amp_final_percent": "10.90",
+      "amp_final_amount": "7.91",
+      "exchange": "6.73"
+    }
+  }
+]

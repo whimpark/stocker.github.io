@@ -1,0 +1,359 @@
+[
+  {
+    "code": "600361",
+    "name": "创新新材",
+    "info": {
+      "date": "2023-01-19",
+      "open": "6.00",
+      "close": "5.92",
+      "max": "6.09",
+      "min": "5.80",
+      "deal_num": "274796",
+      "deal_amount": "164895868.00",
+      "amp_total": "5.23",
+      "amp_final_percent": "6.86",
+      "amp_final_amount": "0.38",
+      "exchange": "4.13"
+    }
+  },
+  {
+    "code": "600455",
+    "name": "博通股份",
+    "info": {
+      "date": "2023-01-19",
+      "open": "24.30",
+      "close": "24.86",
+      "max": "26.19",
+      "min": "23.70",
+      "deal_num": "74527",
+      "deal_amount": "188903192.00",
+      "amp_total": "10.46",
+      "amp_final_percent": "4.41",
+      "amp_final_amount": "1.05",
+      "exchange": "11.93"
+    }
+  },
+  {
+    "code": "600456",
+    "name": "宝钛股份",
+    "info": {
+      "date": "2023-01-19",
+      "open": "40.92",
+      "close": "44.30",
+      "max": "44.56",
+      "min": "40.73",
+      "deal_num": "168708",
+      "deal_amount": "722607897.00",
+      "amp_total": "9.34",
+      "amp_final_percent": "8.00",
+      "amp_final_amount": "3.28",
+      "exchange": "3.53"
+    }
+  },
+  {
+    "code": "600560",
+    "name": "金自天正",
+    "info": {
+      "date": "2023-01-19",
+      "open": "10.24",
+      "close": "10.73",
+      "max": "11.09",
+      "min": "10.24",
+      "deal_num": "90619",
+      "deal_amount": "96933863.00",
+      "amp_total": "8.27",
+      "amp_final_percent": "4.38",
+      "amp_final_amount": "0.45",
+      "exchange": "4.05"
+    }
+  },
+  {
+    "code": "600611",
+    "name": "大众交通",
+    "info": {
+      "date": "2023-01-19",
+      "open": "3.28",
+      "close": "3.28",
+      "max": "3.28",
+      "min": "3.28",
+      "deal_num": "343871",
+      "deal_amount": "112789540.00",
+      "amp_total": "0.00",
+      "amp_final_percent": "10.07",
+      "amp_final_amount": "0.30",
+      "exchange": "2.20"
+    }
+  },
+  {
+    "code": "600635",
+    "name": "大众公用",
+    "info": {
+      "date": "2023-01-19",
+      "open": "3.10",
+      "close": "3.11",
+      "max": "3.13",
+      "min": "3.04",
+      "deal_num": "298256",
+      "deal_amount": "92079067.00",
+      "amp_total": "3.00",
+      "amp_final_percent": "3.67",
+      "amp_final_amount": "0.11",
+      "exchange": "1.23"
+    }
+  },
+  {
+    "code": "600676",
+    "name": "交运股份",
+    "info": {
+      "date": "2023-01-19",
+      "open": "3.96",
+      "close": "3.96",
+      "max": "4.04",
+      "min": "3.90",
+      "deal_num": "103903",
+      "deal_amount": "41215284.00",
+      "amp_total": "3.63",
+      "amp_final_percent": "2.59",
+      "amp_final_amount": "0.10",
+      "exchange": "1.01"
+    }
+  },
+  {
+    "code": "601956",
+    "name": "东贝集团",
+    "info": {
+      "date": "2023-01-19",
+      "open": "6.30",
+      "close": "6.11",
+      "max": "6.30",
+      "min": "6.01",
+      "deal_num": "178363",
+      "deal_amount": "109236699.00",
+      "amp_total": "4.93",
+      "amp_final_percent": "3.91",
+      "amp_final_amount": "0.23",
+      "exchange": "8.18"
+    }
+  },
+  {
+    "code": "603161",
+    "name": "科华控股",
+    "info": {
+      "date": "2023-01-19",
+      "open": "14.88",
+      "close": "14.91",
+      "max": "15.23",
+      "min": "14.19",
+      "deal_num": "102476",
+      "deal_amount": "150299434.00",
+      "amp_total": "7.38",
+      "amp_final_percent": "5.74",
+      "amp_final_amount": "0.81",
+      "exchange": "7.68"
+    }
+  },
+  {
+    "code": "603555",
+    "name": "贵人鸟",
+    "info": {
+      "date": "2023-01-19",
+      "open": "3.63",
+      "close": "3.54",
+      "max": "3.80",
+      "min": "3.54",
+      "deal_num": "205901",
+      "deal_amount": "74611426.00",
+      "amp_total": "7.37",
+      "amp_final_percent": "0.28",
+      "amp_final_amount": "0.01",
+      "exchange": "1.31"
+    }
+  },
+  {
+    "code": "603586",
+    "name": "金麒麟",
+    "info": {
+      "date": "2023-01-19",
+      "open": "15.18",
+      "close": "14.89",
+      "max": "15.35",
+      "min": "14.43",
+      "deal_num": "52618",
+      "deal_amount": "77893438.00",
+      "amp_total": "6.50",
+      "amp_final_percent": "5.16",
+      "amp_final_amount": "0.73",
+      "exchange": "2.68"
+    }
+  },
+  {
+    "code": "603590",
+    "name": "康辰药业",
+    "info": {
+      "date": "2023-01-19",
+      "open": "27.47",
+      "close": "28.60",
+      "max": "29.28",
+      "min": "26.94",
+      "deal_num": "45744",
+      "deal_amount": "131398951.00",
+      "amp_total": "8.67",
+      "amp_final_percent": "5.97",
+      "amp_final_amount": "1.61",
+      "exchange": "2.86"
+    }
+  },
+  {
+    "code": "603607",
+    "name": "京华激光",
+    "info": {
+      "date": "2023-01-19",
+      "open": "13.58",
+      "close": "13.98",
+      "max": "14.43",
+      "min": "13.51",
+      "deal_num": "42605",
+      "deal_amount": "60097114.00",
+      "amp_total": "6.75",
+      "amp_final_percent": "2.64",
+      "amp_final_amount": "0.36",
+      "exchange": "2.39"
+    }
+  },
+  {
+    "code": "603703",
+    "name": "盛洋科技",
+    "info": {
+      "date": "2023-01-19",
+      "open": "16.60",
+      "close": "15.57",
+      "max": "16.60",
+      "min": "15.44",
+      "deal_num": "183190",
+      "deal_amount": "297348568.00",
+      "amp_total": "7.69",
+      "amp_final_percent": "3.18",
+      "amp_final_amount": "0.48",
+      "exchange": "6.13"
+    }
+  },
+  {
+    "code": "603776",
+    "name": "永安行",
+    "info": {
+      "date": "2023-01-19",
+      "open": "13.31",
+      "close": "14.04",
+      "max": "14.64",
+      "min": "13.30",
+      "deal_num": "107525",
+      "deal_amount": "152277072.00",
+      "amp_total": "10.07",
+      "amp_final_percent": "5.48",
+      "amp_final_amount": "0.73",
+      "exchange": "4.63"
+    }
+  },
+  {
+    "code": "603860",
+    "name": "中公高科",
+    "info": {
+      "date": "2023-01-19",
+      "open": "24.80",
+      "close": "24.68",
+      "max": "25.81",
+      "min": "24.36",
+      "deal_num": "25641",
+      "deal_amount": "64290403.00",
+      "amp_total": "6.05",
+      "amp_final_percent": "2.92",
+      "amp_final_amount": "0.70",
+      "exchange": "3.85"
+    }
+  },
+  {
+    "code": "603895",
+    "name": "天永智能",
+    "info": {
+      "date": "2023-01-19",
+      "open": "25.16",
+      "close": "25.98",
+      "max": "26.48",
+      "min": "25.16",
+      "deal_num": "12470",
+      "deal_amount": "32386353.00",
+      "amp_total": "5.22",
+      "amp_final_percent": "2.69",
+      "amp_final_amount": "0.68",
+      "exchange": "1.15"
+    }
+  },
+  {
+    "code": "688095",
+    "name": "福昕软件",
+    "info": {
+      "date": "2023-01-19",
+      "open": "68.80",
+      "close": "74.46",
+      "max": "75.49",
+      "min": "68.53",
+      "deal_num": "18014",
+      "deal_amount": "132383019.00",
+      "amp_total": "10.06",
+      "amp_final_percent": "7.62",
+      "amp_final_amount": "5.27",
+      "exchange": "4.52"
+    }
+  },
+  {
+    "code": "688510",
+    "name": "航亚科技",
+    "info": {
+      "date": "2023-01-19",
+      "open": "16.98",
+      "close": "17.83",
+      "max": "18.10",
+      "min": "16.83",
+      "deal_num": "21408",
+      "deal_amount": "37626561.00",
+      "amp_total": "7.52",
+      "amp_final_percent": "5.63",
+      "amp_final_amount": "0.95",
+      "exchange": "1.29"
+    }
+  },
+  {
+    "code": "688521",
+    "name": "芯原股份-U",
+    "info": {
+      "date": "2023-01-19",
+      "open": "51.09",
+      "close": "57.18",
+      "max": "57.52",
+      "min": "51.09",
+      "deal_num": "84740",
+      "deal_amount": "462087900.00",
+      "amp_total": "12.90",
+      "amp_final_percent": "14.70",
+      "amp_final_amount": "7.33",
+      "exchange": "4.09"
+    }
+  },
+  {
+    "code": "688687",
+    "name": "凯因科技",
+    "info": {
+      "date": "2023-01-19",
+      "open": "24.98",
+      "close": "27.28",
+      "max": "27.40",
+      "min": "24.01",
+      "deal_num": "95554",
+      "deal_amount": "248267464.00",
+      "amp_total": "14.33",
+      "amp_final_percent": "15.30",
+      "amp_final_amount": "3.62",
+      "exchange": "8.23"
+    }
+  }
+]

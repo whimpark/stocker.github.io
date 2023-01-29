@@ -1,0 +1,138 @@
+[
+  {
+    "code": "600725",
+    "name": "云维股份",
+    "info": {
+      "date": "2023-01-16",
+      "open": "3.15",
+      "close": "3.18",
+      "max": "3.19",
+      "min": "3.13",
+      "deal_num": "41788",
+      "deal_amount": "13213701.00",
+      "amp_total": "1.90",
+      "amp_final_percent": "0.63",
+      "amp_final_amount": "0.02",
+      "exchange": "0.34"
+    }
+  },
+  {
+    "code": "601688",
+    "name": "华泰证券",
+    "info": {
+      "date": "2023-01-16",
+      "open": "12.24",
+      "close": "12.70",
+      "max": "12.93",
+      "min": "12.19",
+      "deal_num": "1489111",
+      "deal_amount": "1884031061.00",
+      "amp_total": "6.07",
+      "amp_final_percent": "4.10",
+      "amp_final_amount": "0.50",
+      "exchange": "2.04"
+    }
+  },
+  {
+    "code": "601828",
+    "name": "美凯龙",
+    "info": {
+      "date": "2023-01-16",
+      "open": "5.15",
+      "close": "5.15",
+      "max": "5.15",
+      "min": "5.15",
+      "deal_num": "50464",
+      "deal_amount": "25989140.00",
+      "amp_total": "0.00",
+      "amp_final_percent": "10.04",
+      "amp_final_amount": "0.47",
+      "exchange": "0.14"
+    }
+  },
+  {
+    "code": "603043",
+    "name": "广州酒家",
+    "info": {
+      "date": "2023-01-16",
+      "open": "26.21",
+      "close": "26.15",
+      "max": "26.72",
+      "min": "25.81",
+      "deal_num": "67469",
+      "deal_amount": "176500332.00",
+      "amp_total": "3.47",
+      "amp_final_percent": "-0.23",
+      "amp_final_amount": "-0.06",
+      "exchange": "1.19"
+    }
+  },
+  {
+    "code": "603060",
+    "name": "国检集团",
+    "info": {
+      "date": "2023-01-16",
+      "open": "12.57",
+      "close": "12.80",
+      "max": "13.10",
+      "min": "12.42",
+      "deal_num": "36494",
+      "deal_amount": "46843257.00",
+      "amp_total": "5.43",
+      "amp_final_percent": "2.15",
+      "amp_final_amount": "0.27",
+      "exchange": "0.50"
+    }
+  },
+  {
+    "code": "603110",
+    "name": "东方材料",
+    "info": {
+      "date": "2023-01-16",
+      "open": "34.70",
+      "close": "36.73",
+      "max": "37.51",
+      "min": "34.70",
+      "deal_num": "42078",
+      "deal_amount": "154114587.00",
+      "amp_total": "8.11",
+      "amp_final_percent": "5.97",
+      "amp_final_amount": "2.07",
+      "exchange": "2.09"
+    }
+  },
+  {
+    "code": "603136",
+    "name": "天目湖",
+    "info": {
+      "date": "2023-01-16",
+      "open": "26.31",
+      "close": "26.06",
+      "max": "26.47",
+      "min": "25.90",
+      "deal_num": "40835",
+      "deal_amount": "106883770.00",
+      "amp_total": "2.17",
+      "amp_final_percent": "-0.95",
+      "amp_final_amount": "-0.25",
+      "exchange": "2.19"
+    }
+  },
+  {
+    "code": "688086",
+    "name": "*ST紫晶",
+    "info": {
+      "date": "2023-01-16",
+      "open": "2.37",
+      "close": "2.39",
+      "max": "2.40",
+      "min": "2.35",
+      "deal_num": "19974",
+      "deal_amount": "4752346.00",
+      "amp_total": "2.11",
+      "amp_final_percent": "0.84",
+      "amp_final_amount": "0.02",
+      "exchange": "1.50"
+    }
+  }
+]

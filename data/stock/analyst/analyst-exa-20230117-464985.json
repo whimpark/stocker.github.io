@@ -1,0 +1,240 @@
+[
+  {
+    "code": "600077",
+    "name": "宋都股份",
+    "info": {
+      "date": "2023-01-17",
+      "open": "2.62",
+      "close": "2.88",
+      "max": "2.88",
+      "min": "2.61",
+      "deal_num": "720471",
+      "deal_amount": "202182893.00",
+      "amp_total": "10.31",
+      "amp_final_percent": "9.92",
+      "amp_final_amount": "0.26",
+      "exchange": "5.38"
+    }
+  },
+  {
+    "code": "600433",
+    "name": "冠豪高新",
+    "info": {
+      "date": "2023-01-17",
+      "open": "4.25",
+      "close": "4.36",
+      "max": "4.43",
+      "min": "4.21",
+      "deal_num": "570003",
+      "deal_amount": "247229339.00",
+      "amp_total": "5.41",
+      "amp_final_percent": "7.13",
+      "amp_final_amount": "0.29",
+      "exchange": "3.96"
+    }
+  },
+  {
+    "code": "600501",
+    "name": "航天晨光",
+    "info": {
+      "date": "2023-01-17",
+      "open": "13.50",
+      "close": "12.79",
+      "max": "13.50",
+      "min": "12.61",
+      "deal_num": "427896",
+      "deal_amount": "552465100.00",
+      "amp_total": "7.13",
+      "amp_final_percent": "2.40",
+      "amp_final_amount": "0.30",
+      "exchange": "10.16"
+    }
+  },
+  {
+    "code": "600579",
+    "name": "克劳斯",
+    "info": {
+      "date": "2023-01-17",
+      "open": "6.23",
+      "close": "6.50",
+      "max": "6.83",
+      "min": "6.23",
+      "deal_num": "90792",
+      "deal_amount": "59368021.00",
+      "amp_total": "9.57",
+      "amp_final_percent": "3.67",
+      "amp_final_amount": "0.23",
+      "exchange": "1.82"
+    }
+  },
+  {
+    "code": "600592",
+    "name": "龙溪股份",
+    "info": {
+      "date": "2023-01-17",
+      "open": "7.35",
+      "close": "7.61",
+      "max": "7.88",
+      "min": "7.25",
+      "deal_num": "141211",
+      "deal_amount": "106766033.00",
+      "amp_total": "8.69",
+      "amp_final_percent": "4.97",
+      "amp_final_amount": "0.36",
+      "exchange": "3.53"
+    }
+  },
+  {
+    "code": "600735",
+    "name": "新华锦",
+    "info": {
+      "date": "2023-01-17",
+      "open": "6.48",
+      "close": "6.88",
+      "max": "7.12",
+      "min": "6.38",
+      "deal_num": "372581",
+      "deal_amount": "255509421.00",
+      "amp_total": "11.44",
+      "amp_final_percent": "6.34",
+      "amp_final_amount": "0.41",
+      "exchange": "8.85"
+    }
+  },
+  {
+    "code": "600771",
+    "name": "广誉远",
+    "info": {
+      "date": "2023-01-17",
+      "open": "29.20",
+      "close": "30.75",
+      "max": "31.89",
+      "min": "29.08",
+      "deal_num": "367261",
+      "deal_amount": "1145930105.00",
+      "amp_total": "9.69",
+      "amp_final_percent": "6.07",
+      "amp_final_amount": "1.76",
+      "exchange": "7.50"
+    }
+  },
+  {
+    "code": "601118",
+    "name": "海南橡胶",
+    "info": {
+      "date": "2023-01-17",
+      "open": "4.44",
+      "close": "4.65",
+      "max": "4.74",
+      "min": "4.41",
+      "deal_num": "732203",
+      "deal_amount": "337903946.00",
+      "amp_total": "7.53",
+      "amp_final_percent": "6.16",
+      "amp_final_amount": "0.27",
+      "exchange": "1.71"
+    }
+  },
+  {
+    "code": "603068",
+    "name": "博通集成",
+    "info": {
+      "date": "2023-01-17",
+      "open": "29.19",
+      "close": "31.74",
+      "max": "31.74",
+      "min": "28.86",
+      "deal_num": "60693",
+      "deal_amount": "189388634.00",
+      "amp_total": "9.98",
+      "amp_final_percent": "10.02",
+      "amp_final_amount": "2.89",
+      "exchange": "4.03"
+    }
+  },
+  {
+    "code": "603303",
+    "name": "得邦照明",
+    "info": {
+      "date": "2023-01-17",
+      "open": "17.51",
+      "close": "19.28",
+      "max": "19.44",
+      "min": "17.51",
+      "deal_num": "79367",
+      "deal_amount": "148840126.00",
+      "amp_total": "10.92",
+      "amp_final_percent": "9.11",
+      "amp_final_amount": "1.61",
+      "exchange": "1.66"
+    }
+  },
+  {
+    "code": "688081",
+    "name": "兴图新科",
+    "info": {
+      "date": "2023-01-17",
+      "open": "17.21",
+      "close": "18.80",
+      "max": "19.40",
+      "min": "17.21",
+      "deal_num": "19559",
+      "deal_amount": "36684128.00",
+      "amp_total": "12.59",
+      "amp_final_percent": "8.11",
+      "amp_final_amount": "1.41",
+      "exchange": "2.66"
+    }
+  },
+  {
+    "code": "688393",
+    "name": "安必平",
+    "info": {
+      "date": "2023-01-17",
+      "open": "22.86",
+      "close": "24.21",
+      "max": "24.28",
+      "min": "22.86",
+      "deal_num": "12334",
+      "deal_amount": "29313442.00",
+      "amp_total": "6.21",
+      "amp_final_percent": "5.95",
+      "amp_final_amount": "1.36",
+      "exchange": "2.04"
+    }
+  },
+  {
+    "code": "688416",
+    "name": "恒烁股份",
+    "info": {
+      "date": "2023-01-17",
+      "open": "40.49",
+      "close": "42.12",
+      "max": "42.80",
+      "min": "40.00",
+      "deal_num": "18409",
+      "deal_amount": "77090663.00",
+      "amp_total": "7.04",
+      "amp_final_percent": "5.96",
+      "amp_final_amount": "2.37",
+      "exchange": "10.22"
+    }
+  },
+  {
+    "code": "688772",
+    "name": "珠海冠宇",
+    "info": {
+      "date": "2023-01-17",
+      "open": "20.68",
+      "close": "22.60",
+      "max": "23.09",
+      "min": "20.67",
+      "deal_num": "230205",
+      "deal_amount": "505153790.00",
+      "amp_total": "11.62",
+      "amp_final_percent": "8.50",
+      "amp_final_amount": "1.77",
+      "exchange": "3.04"
+    }
+  }
+]
