@@ -5,6 +5,9 @@ const FileHelper =require("../file/FileHelper.js")
 const Helper = require('../util/Helper.js')
 
  
+const lineByLine = require('n-readlines');
+
+ 
 const ROOT=__dirname+"/../.."
 
 
@@ -14,33 +17,41 @@ function getKLinesValue(values, index){
 }
 
 function buildJsonFiles(dir,filter){
+    let start=Date.now()
     let companyFolder=dir+"/company"
     let klinesFolder=dir+"/klines"
-    let files=fs.readdirSync(companyFolder)
+    let conpanyFiles=fs.readdirSync(companyFolder)
  
     let data=[]
-    files.forEach(function(filename){
-        if(filename.endsWith(filter)){
-            // company
-            let stock=JSON.parse(FileHelper.read(companyFolder+"/"+filename));
-            let code=filename.split(".")[0]
-            let klinesFiles=FileHelper.getFiles(klinesFolder+"/"+code)
-            // klines, 仅处理klines最新2个文件(最近2年的数据)
-            if(klinesFiles && klinesFiles.length>2){
-                klinesFiles.splice(0, klinesFiles.length-2)
-            }
-            klinesFiles.forEach(function(klinesFilename){
-                const klineContent=FileHelper.read(klinesFilename)
-                const klineArray=klineContent.split("\n")
-                klineArray.forEach(kline=>{
-                    stock.klines.push(kline)
-                })
-            })
-            data.push(stock)
-        }
-    })
-    console.log("读到"+data.length+"个文件数据!");
+    for (let cfi = 0; cfi < conpanyFiles.length; cfi++) {
+        const conpanyFile = conpanyFiles[cfi];
+        if(!conpanyFile.endsWith(filter)) continue;
 
+        // company
+        let stock=JSON.parse(FileHelper.read(companyFolder+"/"+conpanyFile));
+        let code=conpanyFile.split(".")[0]
+        let klinesFiles=FileHelper.getFiles(klinesFolder+"/"+code)
+        // klines, 
+        // 仅处理klines最新2个文件(最近2年的数据)
+        // 仅处理klines最新100个数据
+        let klineCount=100
+        if(klinesFiles && klinesFiles.length>2){
+            klinesFiles.splice(0, klinesFiles.length-2)
+        }
+        for (let kfi = 0; kfi < klinesFiles.length; kfi++) { 
+            const liner = new lineByLine(klinesFiles[kfi]);
+            let line; 
+            while (line = liner.next()) {
+                stock.klines.push(line.toString('utf8'));   
+            }
+        }
+        if(stock.klines.length>klineCount){
+            stock.klines=stock.klines.splice(-klineCount)
+        }
+        data.push(stock)        
+    }
+    console.log("读到"+data.length+"个文件数据!","耗时",Date.now()-start, "ms", start=Date.now());
+ 
     data.forEach(stock=>{
         let klines=[];
         stock.klines.forEach(e=>{
@@ -61,12 +72,22 @@ function buildJsonFiles(dir,filter){
         })
         stock.klines=klines;
     })
-    console.log("完成转换!");
+    console.log("完成转换!","耗时",Date.now()-start, "ms", start=Date.now());
  
+
     //write data file
     let builderOutputFileName="builder-"+parseInt(new Date().getTime()/1000/3600)+".json" 
-    FileHelper.write(ROOT+"/data/temp/"+builderOutputFileName,JSON.stringify(data))
-
+    let file=ROOT+"/data/temp/"+builderOutputFileName;
+    FileHelper.write(file,"[")
+    for (let index = 0; index < data.length; index++) {
+        const stock = data[index];
+        FileHelper.append(file,JSON.stringify(stock))
+        if(index!=(data.length-1)){
+            FileHelper.append(file,",")
+        }
+    }
+    FileHelper.append(file,"]")
+    console.log("完成写入JSON文件!","耗时",Date.now()-start, "ms", start=Date.now());
     //write config
     Helper.config(builderOutputFileName,"builder","filename")
 }
