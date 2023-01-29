@@ -39,7 +39,7 @@ jobs:
         npm install 
         npm run github:spider:append
         npm run builder
-        sh .github/bin/analyst.sh
+        npm run github:analyst
     - name: Commit files
       run: |
         git config --local user.email "whimpark@gmail.com"

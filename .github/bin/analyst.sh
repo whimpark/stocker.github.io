@@ -9,9 +9,9 @@ checkEmpty(){
     return `ls -A $1|wc -w`
 }
 
-npm run analyst
+npm run github:analyst
 
-files="$BASEDIR/../../data/temp/analyst-*.*"
+files="$BASEDIR/../../data/temp/analyst-*.html"
 
 # move analyst result files
 if checkEmpty "$files" ; then
