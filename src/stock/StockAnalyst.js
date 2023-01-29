@@ -22,6 +22,45 @@ const AvgHandler=require("./handler/AvgHandler.js")
 const LinkHandler=require("./handler/LinkHandler.js")
  
 
+async function showHtml(data, name){
+    if(!data || data.length==0){
+        console.log("分析结果为空!");
+        return 
+    }
+    //html
+    let template=FileHelper.read(ROOT+"/src/stock/html/template.html")
+    let content=""
+    for (let rowi = 0; rowi < data.length; rowi++) {
+        const stock = data[rowi];
+        let a=stock.analyst
+        let code=stock.code
+        let link="<a href='%s'>%s,%s</a> <br/>\n"  
+        let linkHerf; 
+        if(code.startsWith("3")){
+            linkHerf="http://quote.eastmoney.com/sz"+stock.code+".html"
+        }else if(code.startsWith("0")){
+            linkHerf="http://quote.eastmoney.com/sz"+stock.code+".html"
+        }else if(code.startsWith("4")){
+            linkHerf="http://quote.eastmoney.com/bj/"+stock.code+".html"
+        }else if(code.startsWith("8")){
+            linkHerf="http://quote.eastmoney.com/bj/"+stock.code+".html"
+        }else if(code.startsWith("68")){
+            linkHerf="http://quote.eastmoney.com/kcb/"+stock.code+".html"
+        }else if(code.startsWith("6")){
+            linkHerf="http://quote.eastmoney.com/sh"+stock.code+".html"
+        } 
+        content+=util.format(link, linkHerf, stock.name, stock.code)
+    }
+    
+    let html=util.format(template, content)
+    let date=Helper.formatDate()
+    let timestamp=parseInt(new Date().getTime()/1000/3600)
+    let filename="analyst-"+date+"-"+timestamp +"-"+name
+    FileHelper.write(ROOT+"/data/temp/"+filename+".html", html)
+    console.log(html);
+}
+
+
 async function show(data, name){
     if(!data || data.length==0){
         console.log("分析结果为空!");
@@ -43,7 +82,7 @@ async function show(data, name){
     let date=Helper.formatDate()
     let timestamp=parseInt(new Date().getTime()/1000/3600)
     let filename="analyst-"+name+"-"+date+"-"+timestamp 
-    FileHelper.write(ROOT+"/data/temp/"+filename+".md", content)
+    // FileHelper.write(ROOT+"/data/temp/"+filename+".md", content)
 
     //json
     let stocks=[]
@@ -80,14 +119,16 @@ function main(){
     analyzer.cleanAnalyzeFilter()
     analyzer.appendAnalyzeFilter(AvgFilter) 
     let avgStocks=analyzer.analyze(data) 
-    show(avgStocks,"avg")
+    // show(avgStocks,"avg")
+    showHtml(avgStocks,"avg")
 
     //exchange
     console.log("=========================exchange");
     analyzer.cleanAnalyzeFilter()
     analyzer.appendAnalyzeFilter(ExchangeFilter)
     let exchangeStocks=analyzer.analyze(data) 
-    show(exchangeStocks, "exa")
+    // show(exchangeStocks, "exa")
+    showHtml(exchangeStocks,"exa")
 
 
 }

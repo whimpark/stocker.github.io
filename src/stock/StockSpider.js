@@ -123,10 +123,10 @@ async function fetchData(type, startPage, pages, size, fromDate){
             try {
                 let e=list[ei];
                 //random time
-                await Helper.sleep(parseInt(Math.random()*100))
+                await Helper.sleep(parseInt(Math.random()*10))
                 //klines
                 let klines=(type=="Stock")?await getStockKLines(e,fromDate) : await getIndustryKLines(e.f12,fromDate) 
-                let data={code:e.f12,name:e.f14,klines:klines}
+                let data={code:e.f12,name:e.f14,market:e.f13,klines:klines}
                 toJsonFiles([data])
             } catch (error) {
                 console.error(error)
