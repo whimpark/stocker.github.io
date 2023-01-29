@@ -61,15 +61,17 @@ async function getStockList(page,size){
 }
 
 
-async function getStockPage(page,size){ 
-    TIMESTAMP=new Date().getTime()
-    CB='jQuery112405355366022981742_'+TIMESTAMP 
-    ORDER=1
-    url='http://35.push2.eastmoney.com/api/qt/clist/get'
-    url+='?cb='+CB+'&pn='+page+'&pz='+size+'&po='+ORDER+'&_='+TIMESTAMP
-    url+='&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&wbp2u=|0|0|0|web&fid=f8&fs=m:1+t:2,m:1+t:23'
+async function getStockPage(page,size){
+    const num=parseInt(Math.random()*100)
+    timestamp=new Date().getTime()
+    cb='jQuery112405355366022981742_'+timestamp 
+    order=1
+    url='http://'+num+'.push2.eastmoney.com/api/qt/clist/get'
+    url+='?cb='+cb+'&pn='+page+'&pz='+size+'&po='+order+'&_='+timestamp
+    url+='&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&wbp2u=|0|0|0|web'
+    url+="&fid=f3&fs=m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23,m:0+t:81+s:2048"
     url+="&fields=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f12,f13,f14,f15,f16,f17,f18,f20,f21,f23,f24,f25,f22,f11,f62,f128,f136,f115,f152"
-    eval("function "+CB+"(data){return data;}");
+    eval("function "+cb+"(data){return data;}");
     return eval(await AxiosRequest.get(url) )
 }
 
@@ -81,24 +83,22 @@ async function getStockPage(page,size){
     date, open,close, max, min, deal_num, deal_amount, amplitude, final_amp, final_amp_amount, turnover
  */
 
-async function getStockKLines(code, fromDate){ 
+async function getStockKLines(stock, fromDate){ 
+    const num=parseInt(Math.random()*100)
     TIMESTAMP=new Date().getTime()
     CB='jsonp'+TIMESTAMP
-    SECID="1."+code
+    SECID=stock.f13+"."+stock.f12
     START=fromDate?fromDate:"0"
-    url='http://push2his.eastmoney.com/api/qt/stock/kline/get'
+    url='http://'+num+'.push2his.eastmoney.com/api/qt/stock/kline/get'
     url+='?fields1=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61'
     url+="&beg="+START+"&end=20500101&ut=fa5fd1943c7b386f172d6893dbfba10b&rtntype=6&secid="+SECID+"&klt=101&fqt=1"
     url+='&cb='+CB
+
     eval("function "+CB+"(data){return data;}");
     let result=eval(await AxiosRequest.get(url)) 
     if(result&& result.data && result.data.klines) {
-        let klines=[]
-        result.data.klines.forEach(e=>{
-            klines.push(e)
-        })
-        console.log("获取"+code+"共"+klines.length+"个klines");
-        return klines
+        console.log("获取"+SECID+"共"+result.data.klines.length+"个klines");
+        return result.data.klines
     }else{
         return [];
     }
@@ -113,7 +113,7 @@ async function fetchData(type, startPage, pages, size, fromDate){
         let page=index+1
         let list=(type=="Stock")?await getStockList(page, size) : await getIndustryList(page, size) 
         if(list && list.length){
-            console.log("获取到"+list.length+"个"+type+"数据, page="+page);
+            console.log("获取到",list.length,"个",type,"数据, 当前页="+page,",总页数=", pages,"页");
         }else{
             console.log("没有"+type+"数据, page="+page);
             continue;
@@ -125,7 +125,7 @@ async function fetchData(type, startPage, pages, size, fromDate){
                 //random time
                 await Helper.sleep(parseInt(Math.random()*100))
                 //klines
-                let klines=(type=="Stock")?await getStockKLines(e.f12,fromDate) : await getIndustryKLines(e.f12,fromDate) 
+                let klines=(type=="Stock")?await getStockKLines(e,fromDate) : await getIndustryKLines(e.f12,fromDate) 
                 let data={code:e.f12,name:e.f14,klines:klines}
                 toJsonFiles([data])
             } catch (error) {
@@ -185,9 +185,13 @@ async function main(){
     // local
     if(argv["local"]=="true"){
         // fetch Stock
-        // result=await getStockPage(1, 1) 
-        // pages=getPages(result.data.total, size)
+        result=await getStockPage(1, 20) 
+        pages=getPages(result.data.total, size)
         await fetchData("Stock", startPage, 1, 20, fromDate);
+ 
+        // result.data.diff.forEach(e => {
+        //     console.log(e.f12, e.f11, e.f13);
+        // });
 
         // fetch Industry
         // result=await getIndustryPage(1, 1) 
