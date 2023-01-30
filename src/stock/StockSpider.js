@@ -54,6 +54,27 @@ async function getIndustryKLines(code,fromDate){
     }
 }
 
+
+
+
+async function getNationHolderList(pages){    
+    let nationData=[]
+    for (let cti = 0; cti < pages; cti++) {
+        let page=cti+1
+        await Helper.sleep(parseInt(Math.random()*100))
+        let nationResult=await getNationHolderPage(page)
+        nationData.push(...nationResult.data)
+    }
+    return nationData
+}
+
+async function getNationHolderPage(page,size){   
+    let url='https://data.hexin.cn/gjd/team/type/3/page/'+page+'/'
+    return await AxiosRequest.get(url)
+}
+
+
+
 async function getStockList(page,size){ 
     let result=await getStockPage(page, size)
     if(!result || !result.data) return []; 
@@ -134,7 +155,8 @@ async function fetchData(type, startPage, pages, size, fromDate){
         }
     }
 }
- 
+
+
 
 function toJsonFiles(data){
     data.forEach(e => {
@@ -169,6 +191,7 @@ function getPages(total,size){
 
 async function main(){
     const start=Date.now();
+    const today=Helper.formatDate()
     let size=20
     let startPage=0
     let result, pages
@@ -185,9 +208,9 @@ async function main(){
     // local
     if(argv["local"]=="true"){
         // fetch Stock
-        result=await getStockPage(1, 20) 
-        pages=getPages(result.data.total, size)
-        await fetchData("Stock", startPage, 1, 20, fromDate);
+        // result=await getStockPage(1, 20) 
+        // pages=getPages(result.data.total, size)
+        // await fetchData("Stock", startPage, 1, 20, fromDate);
  
         // result.data.diff.forEach(e => {
         //     console.log(e.f12, e.f11, e.f13);
@@ -204,6 +227,12 @@ async function main(){
  
         // console.log(klinesFiles);
 
+        let nationPages=30
+        let nationData=await getNationHolderList(nationPages)
+        let file="./data/temp/nation-"+today+".json"
+        FileHelper.write(file, JSON.stringify(nationData,null,2))
+        Helper.config(file,"spider","nation")
+ 
     }
 
 
@@ -219,6 +248,12 @@ async function main(){
         result=await getIndustryPage(1, 1)
         pages=getPages(result.data.total, size)
         await fetchData("Industry", startPage, pages, size, fromDate);
+
+        // fetch nation holder
+        let nationPages=30
+        let nationData=await getNationHolderList(nationPages)
+        let file="./data/stock/spider/nation/nation-"+today+".json"
+        FileHelper.write(file, JSON.stringify(nationData,null,2))
     }
 
     console.log("耗时: ",Date.now()-start, " ms")

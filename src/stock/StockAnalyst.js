@@ -24,6 +24,8 @@ const NotSTFilter = require("./filter/NotSTFilter.js")
 const ExchangeHandler = require("./handler/ExchangeHandler.js")
 const AvgHandler = require("./handler/AvgHandler.js")
 const LinkHandler = require("./handler/LinkHandler.js")
+const NationHandler = require("./handler/NationHandler.js")
+const NationFilter = require("./filter/NationFilter.js")
 
 
 
@@ -159,15 +161,30 @@ function main() {
     analyzer.appendFilter(NotSTFilter)
     analyzer.appendHandler(ExchangeHandler)
     analyzer.appendHandler(AvgHandler)
+    analyzer.appendHandler(NationHandler)
 
 
     let content="";
+    //nation+avg
+    console.log("=========================nation+avg");
+    analyzer.cleanAnalyzeFilter()
+    analyzer.appendAnalyzeFilter(AvgFilter) 
+    analyzer.appendAnalyzeFilter(NationFilter) 
+    content+=buildStockerHtml(analyzer.analyze(data),"nation+avg"); 
+    
+    //nation+exchange
+    console.log("=========================nation+exchange");
+    analyzer.cleanAnalyzeFilter()
+    analyzer.appendAnalyzeFilter(ExchangeFilter) 
+    analyzer.appendAnalyzeFilter(NationFilter) 
+    content+=buildStockerHtml(analyzer.analyze(data),"nation+exchange"); 
+
+
     //avg
     console.log("=========================avg");
     analyzer.cleanAnalyzeFilter()
     analyzer.appendAnalyzeFilter(AvgFilter) 
     content+=buildStockerHtml(analyzer.analyze(data),"avg");
- 
 
     //exchange
     console.log("=========================exchange");
@@ -175,7 +192,6 @@ function main() {
     analyzer.appendAnalyzeFilter(ExchangeFilter) 
     content+=buildStockerHtml(analyzer.analyze(data),"exa"); 
 
-    
     // analyst html
     let template = FileHelper.read(ROOT + "/src/stock/html/template.html")
     let html=util.format(template, content)

@@ -3,6 +3,7 @@ module.exports = {
     filters:[],
     handlers:[],
     analyzeFilters:[],
+    context:{},
 
     appendFilter(filter) {
         this.filters.push(filter)
@@ -22,14 +23,13 @@ module.exports = {
 
 
     doFilters(data, filters) {
-        let context={ "data":data, "filters":filters }
         // execute filter
         let result=[]
         data.forEach(stock=>{
             let isRightStock=true;
             for (var fi=0;fi<filters.length;fi++) {
                 let filter=filters[fi]
-                if(!filter.check(context,stock)){
+                if(!filter.check(this.context,stock)){
                     isRightStock=false;
                     break;
                 }
@@ -49,7 +49,7 @@ module.exports = {
         // execute handler once
         if(onceHandlers && onceHandlers.length){
             onceHandlers.forEach(handler=>{
-                handler.handle(null, data)
+                handler.handle(this.context, data)
             })
         }
 
@@ -57,7 +57,7 @@ module.exports = {
         data.forEach(stock=>{
             for (var fi=0;fi<eachHandlers.length;fi++) {
                 let handler=eachHandlers[fi]
-                handler.handle(null, stock)
+                handler.handle(this.context, stock)
             }
         })
     },
