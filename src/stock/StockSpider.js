@@ -118,7 +118,7 @@ async function getStockKLines(stock, fromDate){
     eval("function "+CB+"(data){return data;}");
     let result=eval(await AxiosRequest.get(url)) 
     if(result&& result.data && result.data.klines) {
-        console.log("获取"+SECID+"共"+result.data.klines.length+"个klines");
+        process.stdout.write(SECID+"|")
         return result.data.klines
     }else{
         return [];
@@ -153,6 +153,7 @@ async function fetchData(type, startPage, pages, size, fromDate){
                 console.error(error)
             }
         }
+        console.log(" next page!");
     }
 }
 
