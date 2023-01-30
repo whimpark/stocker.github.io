@@ -254,6 +254,7 @@ async function main(){
         let nationData=await getNationHolderList(nationPages)
         let file="./data/stock/spider/nation/nation-"+today+".json"
         FileHelper.write(file, JSON.stringify(nationData,null,2))
+        Helper.config(file,"spider","nation")
     }
 
     console.log("耗时: ",Date.now()-start, " ms")
