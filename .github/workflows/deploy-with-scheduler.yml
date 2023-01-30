@@ -34,18 +34,26 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Build
+    - name: spider
       run: |
         npm install 
         npm run github:spider:append
-        npm run builder
-        npm run github:analyst
-    - name: Commit files
+    - name: Commit spider files
       run: |
         git config --local user.email "whimpark@gmail.com"
         git config --local user.name  "whimpark"
         git add .
-        git commit -a -m "deploy commit!"
+        git commit -a -m "spider commit!"
+    - name: analyst
+      run: |
+        npm run builder
+        npm run github:analyst
+    - name: Commit build and analyst files
+      run: |
+        git config --local user.email "whimpark@gmail.com"
+        git config --local user.name  "whimpark"
+        git add .
+        git commit -a -m "analyst commit!"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
