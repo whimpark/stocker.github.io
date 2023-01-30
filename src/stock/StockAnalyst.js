@@ -61,20 +61,8 @@ function buildStockerHtml(data, name) {
         let a = stock.analyst
         let code = stock.code
         let link = "<a href='%s'>%s,%s</a> <br/>\n"
-        let linkHerf;
-        if (code.startsWith("3")) {
-            linkHerf = "http://quote.eastmoney.com/sz" + stock.code + ".html"
-        } else if (code.startsWith("0")) {
-            linkHerf = "http://quote.eastmoney.com/sz" + stock.code + ".html"
-        } else if (code.startsWith("4")) {
-            linkHerf = "http://quote.eastmoney.com/bj/" + stock.code + ".html"
-        } else if (code.startsWith("8")) {
-            linkHerf = "http://quote.eastmoney.com/bj/" + stock.code + ".html"
-        } else if (code.startsWith("68")) {
-            linkHerf = "http://quote.eastmoney.com/kcb/" + stock.code + ".html"
-        } else if (code.startsWith("6")) {
-            linkHerf = "http://quote.eastmoney.com/sh" + stock.code + ".html"
-        }
+        //code startsWith(0-3-4-6-68-8)
+        let linkHerf="https://wap.eastmoney.com/quote/stock/"+stock.market+"."+stock.code+".html"
         content += util.format(link, linkHerf, stock.name, stock.code)
     } 
     return content;
