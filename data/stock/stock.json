@@ -1,11 +1,11 @@
 {
   "builder": {
-    "filename": "builder-465301.json"
+    "filename": "builder-465320.json"
   },
   "analyst": {
     "filename": "analyst-exa-20230129-465276"
   },
   "spider": {
-    "nation": "./data/stock/spider/nation/nation-20230130.json"
+    "nation": "./data/stock/spider/nation/nation-20230131.json"
   }
 }
