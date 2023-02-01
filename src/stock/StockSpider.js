@@ -61,9 +61,11 @@ async function getNationHolderList(pages){
     let nationData=[]
     for (let cti = 0; cti < pages; cti++) {
         let page=cti+1
-        await Helper.sleep(parseInt(Math.random()*100))
+        await Helper.sleep(parseInt(Math.random()*800))
         let nationResult=await getNationHolderPage(page)
-        nationData.push(...nationResult.data)
+        if(nationResult && nationResult.data){
+            nationData.push(...nationResult.data)
+        }
     }
     return nationData
 }
@@ -239,23 +241,34 @@ async function main(){
 
     // github
     if(argv["github"]=="true"){
+        try {            
+            // fetch Stock
+            result=await getStockPage(1, 1) 
+            pages=getPages(result.data.total, size)
+            await fetchData("Stock", startPage, pages, size, fromDate);
+        } catch (error) {
+            console.log("fetch Stock error!");
+        }
 
-        // fetch Stock
-        result=await getStockPage(1, 1) 
-        pages=getPages(result.data.total, size)
-        await fetchData("Stock", startPage, pages, size, fromDate);
+        try {
+            // fetch Industry
+            result=await getIndustryPage(1, 1)
+            pages=getPages(result.data.total, size)
+            await fetchData("Industry", startPage, pages, size, fromDate);
+        } catch (error) {
+            console.log("fetch Industry error!");
+        }
 
-        // fetch Industry
-        result=await getIndustryPage(1, 1)
-        pages=getPages(result.data.total, size)
-        await fetchData("Industry", startPage, pages, size, fromDate);
-
-        // fetch nation holder
-        let nationPages=30
-        let nationData=await getNationHolderList(nationPages)
-        let file="./data/stock/spider/nation/nation-"+today+".json"
-        FileHelper.write(file, JSON.stringify(nationData,null,2))
-        Helper.config(file,"spider","nation")
+        try {
+            // fetch nation holder
+            let nationPages=30
+            let nationData=await getNationHolderList(nationPages)
+            let file="./data/stock/spider/nation/nation-"+today+".json"
+            FileHelper.write(file, JSON.stringify(nationData,null,2))
+            Helper.config(file,"spider","nation")
+        } catch (error) {
+            console.log("fetch nation holder error!");
+        }
     }
 
     console.log("耗时: ",Date.now()-start, " ms")
