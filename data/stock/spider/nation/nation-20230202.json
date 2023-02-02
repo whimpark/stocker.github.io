@@ -3538,6 +3538,224 @@
     ]
   },
   {
+    "code": "300129",
+    "name": "泰胜风能",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": null,
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.63",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T000025531",
+        "name": "全国社保基金一零二组合",
+        "scale": "0.63",
+        "tag": "社保"
+      }
+    ]
+  },
+  {
+    "code": "688191",
+    "name": "智洋创新",
+    "report": "22年三季报",
+    "sb": null,
+    "ylj": "养老金",
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "1.64",
+    "sqScale": "1.01",
+    "holders": [
+      {
+        "id": "T004802997",
+        "name": "基本养老保险基金三零四组合",
+        "scale": "1.64",
+        "tag": "养老金"
+      }
+    ]
+  },
+  {
+    "code": "002508",
+    "name": "老板电器",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": null,
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.63",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T004898556",
+        "name": "中信证券股份有限公司-社保基金1106组合",
+        "scale": "0.63",
+        "tag": "社保"
+      }
+    ]
+  },
+  {
+    "code": "300986",
+    "name": "志特新材",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": null,
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.63",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T000059985",
+        "name": "全国社保基金一一六组合",
+        "scale": "0.63",
+        "tag": "社保"
+      }
+    ]
+  },
+  {
+    "code": "603297",
+    "name": "永新光学",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": "养老金",
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "1.31",
+    "sqScale": "0.69",
+    "holders": [
+      {
+        "id": "Q121B6E300",
+        "name": "易方达基金管理有限公司-社保基金17042组合",
+        "scale": "0.66",
+        "tag": "社保"
+      },
+      {
+        "id": "T004898900",
+        "name": "基本养老保险基金一二零二组合",
+        "scale": "0.65",
+        "tag": "养老金"
+      }
+    ]
+  },
+  {
+    "code": "600702",
+    "name": "舍得酒业",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": null,
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.62",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T000122534",
+        "name": "全国社保基金一一七组合",
+        "scale": "0.62",
+        "tag": "社保"
+      }
+    ]
+  },
+  {
+    "code": "002041",
+    "name": "登海种业",
+    "report": "22年三季报",
+    "sb": null,
+    "ylj": null,
+    "hj": null,
+    "zj": "证金",
+    "wts": null,
+    "scale": "1.27",
+    "sqScale": "0.65",
+    "holders": [
+      {
+        "id": "T000265255",
+        "name": "银华基金-农业银行-银华中证金融资产管理计划",
+        "scale": "0.65",
+        "tag": "证金"
+      },
+      {
+        "id": "T000265250",
+        "name": "大成基金-农业银行-大成中证金融资产管理计划",
+        "scale": "0.62",
+        "tag": "证金"
+      }
+    ]
+  },
+  {
+    "code": "000651",
+    "name": "格力电器",
+    "report": "22年三季报",
+    "sb": null,
+    "ylj": null,
+    "hj": "汇金",
+    "zj": "证金",
+    "wts": null,
+    "scale": "3.66",
+    "sqScale": "3.04",
+    "holders": [
+      {
+        "id": "T000073058",
+        "name": "中国证券金融股份有限公司",
+        "scale": "3.19",
+        "tag": "证金"
+      },
+      {
+        "id": "T000280241",
+        "name": "中央汇金资产管理有限责任公司",
+        "scale": "0.47",
+        "tag": "汇金"
+      }
+    ]
+  },
+  {
+    "code": "301195",
+    "name": "北路智控",
+    "report": "22年三季报",
+    "sb": null,
+    "ylj": "养老金",
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.61",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T004765312",
+        "name": "基本养老保险基金三零九组合",
+        "scale": "0.61",
+        "tag": "养老金"
+      }
+    ]
+  },
+  {
+    "code": "300054",
+    "name": "鼎龙股份",
+    "report": "22年三季报",
+    "sb": "社保",
+    "ylj": null,
+    "hj": null,
+    "zj": null,
+    "wts": null,
+    "scale": "0.61",
+    "sqScale": "0.00",
+    "holders": [
+      {
+        "id": "T000025536",
+        "name": "全国社保基金一零七组合",
+        "scale": "0.61",
+        "tag": "社保"
+      }
+    ]
+  },
+  {
     "code": "301349",
     "name": "信德新材",
     "report": "22年三季报",
