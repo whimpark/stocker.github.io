@@ -72,13 +72,15 @@ function buildStockerHtml(data, name) {
 function sendEmail(html) {
     // 创建一个发送邮件对象实例，配置基础信息
     //host，port等信息，不同邮箱的配置内容可以在node_modules/lib/well_know/services.json中找到
+    let username=argv["email-username"]
+    let password=argv["email-password"]
     let transporter = nodemailer.createTransport({
         host: "smtp.qq.com",
         port: 465,
         secure: true, // true for 465, false for other ports //如果端口号是465为true，反之false
         auth: {
-            user: "1509868568@qq.com", // 发送方的邮箱地址
-            pass: "bzamlkdwbygpigfj" // 此处填写你的邮箱授权码
+            user: username, // 发送方的邮箱地址
+            pass: password  // 此处填写你的邮箱授权码
         }
     });
 
@@ -89,11 +91,11 @@ function sendEmail(html) {
         subject: "stocker-" + Helper.formatDate(), // 主题
         html: html // html body
     }
-    //调用发送方法
+    //调用发送方法 
     transporter.sendMail(mailObj, (err, data) => {
-        if (err) throw err
-        console.log('send mail success!')
-    });
+        if (err) console.log(err)
+        else console.log('send mail success!')
+    }); 
 
 }
 

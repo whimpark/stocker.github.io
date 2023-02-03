@@ -36,7 +36,7 @@ jobs:
       run: |
         npm install
         npm run builder
-        npm run github:analyst
+        npm run github:analyst -- --email-username=${{ secrets.EMAIL_USERNAME }}  --email-password=${{ secrets.EMAIL_PASSWORD }}
     - name: Commit files
       run: |
         git config --local user.email "whimpark@gmail.com"
