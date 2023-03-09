@@ -34,6 +34,17 @@ module.exports = {
         let rate10=this.extractRateFromKLine(klines[len-10])
         
         let a=e.analyst
+        a.rate1=rate1
+        a.rate2=rate2
+        a.rate3=rate3
+        a.rate4=rate4
+        a.rate5=rate5
+        a.rate6=rate6
+        a.rate7=rate7
+        a.rate8=rate8
+        a.rate9=rate9
+        a.rate10=rate10 
+
         a.exa1=rate1
         a.exa11=rate2
         a.exa12=parseInt((rate2+rate3)/2)
